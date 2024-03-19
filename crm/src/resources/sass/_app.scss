@@ -1,0 +1,113 @@
+@import "core/variables";
+@import "core/theme-colors";
+
+@media (max-width: 575px) {
+    .v-html-wrapper {
+        table {
+            width: 100% !important;
+        }
+    }
+}
+
+.tab-pane {
+    .content {
+        .single-search-wrapper {
+            .form-group-with-search {
+                .form-control {
+                    box-shadow: none !important;
+                    background-color: var(--base-color) !important;
+                    border-color: var(--default-border-color) !important;
+                    &:focus {
+                        border-color: $brand-color !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Dashboard Design*/
+.dashboard-first-row {
+    .first-column {
+        .mb-primary {
+            @media (min-width: 768px) {
+                &:last-child {
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+.dashboard-second-row {
+    .dashboard-widgets {
+        @media (min-width: 768px) {
+            height: 100%;
+        }
+    }
+}
+
+.dashboard-fourth-row {
+    .first-column {
+        @media (max-width: 767px) {
+            margin-bottom: $default-padding-margin;
+        }
+    }
+}
+
+/*Brand Manager Dropdown Design*/
+.btn-brand-dropdown {
+    .btn {
+        font-size: $default-font-size;
+        border-radius: $default-radius;
+        box-shadow: none !important;
+        background-color: var(--base-color);
+
+        &:hover {
+            color: var(--default-font-color);
+        }
+    }
+
+    .dropdown-menu {
+        width: 13rem;
+        max-width: 13rem;
+        min-width: 13rem;
+        @extend .dropdownAnimation;
+
+        &:before {
+            width: 0;
+            height: 0;
+            content: "";
+            z-index: 2;
+            position: absolute;
+            top: -7px;
+            right: inherit;
+            left: 15px;
+            border-bottom: 7px solid var(--dropdown-menu-bg);
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+        }
+
+        .dropdown-item {
+            white-space: initial;
+
+            &.dropdown-title {
+                padding: 1.5rem;
+            }
+        }
+
+        .brand-items {
+            padding: 0.5rem 0;
+
+            .dropdown-item {
+                padding: 0.75rem 1.5rem;
+            }
+        }
+    }
+
+    @media (max-width: 575px) {
+        .btn {
+            padding: 0.45rem !important;
+        }
+    }
+}

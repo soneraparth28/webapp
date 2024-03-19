@@ -1,0 +1,40 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/public/temp
+/public/uploads
+/public/public.zip
+/public/public_new.zip
+/public/temp.zip
+/public/uploads.zip
+/crm/src/vendor
+/crm/vendor
+/mobile_api/23-8-2023.zip
+/mobile_api/idea.zip
+/mobile_api/vendor
+/mobile_api/vendor 8.0
+/mobile-api/vendor.zip
+/mobile-api/vendor
+/mobile_api/public/cache.zip
+/mobile_api/public/admin.zip
+/mobile_api/public/bacup folders.zip
+/resources BK
+/resources_new
+/routes BK
+/app BK
+/app_new
+/agoratoken.zip
+/app.eduvo.io.zip
+/app.zip
+/resources.zip
+/routes.zip

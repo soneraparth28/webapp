@@ -1,0 +1,81 @@
+<?php
+
+namespace App\Models\Core\Auth\Traits\Relationship;
+
+use App\Models\Core\App\Brand\Brand;
+use App\Models\Core\App\Brand\BrandUserPivot;
+use App\Models\Core\Auth\PasswordHistory;
+use App\Models\Core\Auth\Profile;
+use App\Models\Core\Auth\Role;
+use App\Models\Core\Auth\SocialAccount;
+use App\Models\Core\Builder\Form\CustomFieldValue;
+use App\Models\Core\File\File;
+use App\Models\Core\Setting\Setting;
+use App\Models\Core\Traits\CreatedByRelationship;
+use App\Models\Core\Traits\StatusRelationship;
+
+/**
+ * Class UserRelationship.
+ */
+trait UserRelationship
+{
+    use CreatedByRelationship, StatusRelationship;
+    /**
+     * @return mixed
+     */
+    public function providers()
+    {
+        return $this->hasMany(SocialAccount::class);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function passwordHistories()
+    {
+        return $this->hasMany(PasswordHistory::class);
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class, 'role_user', 'user_id', 'role_id');
+    }
+
+    public function settings()
+    {
+        return $this->morphMany(
+            Setting::class,
+            'settingable'
+        );
+    }
+
+    public function customFields()
+    {
+        return $this->morphMany(
+            CustomFieldValue::class,
+            'contextable'
+        );
+    }
+
+    public function profile()
+    {
+        return $this->hasOne(Profile::class);
+    }
+
+    public function profilePicture()
+    {
+        return $this->morphOne(File::class, 'fileable')
+            ->whereType('profile_picture');
+    }
+
+    public function brands()
+    {
+        return $this->belongsToMany(
+            Brand::class,
+            'brand_user',
+            'user_id',
+            'brand_id'
+        )->withPivot('assigned_by', 'assigned_at')
+            ->using(BrandUserPivot::class);
+    }
+}

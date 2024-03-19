@@ -1,0 +1,184 @@
+***** Home Controller *****
+https://metor.softsuitetech.com/api=> BASE
+ajax/user/updates => AjaxUserUpdate
+mode/{mode} => Dark/Light Modes
+verify/account/{confirmation_code} => Verify Account
+creators/{type?} => Creator Type Detail
+category/{slug}/{type?} => Category Detail
+search/creators => Search Creator
+explore/creators/live => Creator BroadCast Live
+
+***** Add Funds Controller *****
+my/wallet => Wallet Detail
+wallet/payment/success => Payment Process on success
+coinpayments/ipn => Done
+mercadopado/process => Done
+flutterwave/callback => Done
+
+***** Admin Controller *****
+panel/admin
+panel/admin/settings
+panel/admin/settings/limits
+panel/admin/theme
+panel/admin/withdrawals
+panel/admin/withdrawal/{id}
+panel/admin/subscriptions
+panel/admin/transactions
+panel/admin/members
+panel/admin/members/edit/{id}
+panel/admin/verification/members
+panel/admin/payments
+panel/admin/payments/{id}
+panel/admin/profiles-social
+panel/admin/categories
+panel/admin/categories/add
+panel/admin/categories/edit/{id}
+panel/admin/posts
+panel/admin/reports
+panel/admin/google
+panel/admin/blog
+panel/admin/blog/{id}
+panel/admin/resend/email/{id}
+panel/admin/deposits
+panel/admin/deposits/{id}
+panel/admin/members/roles-and-permissions/{id}
+file/verification/{filename}
+panel/admin/referrals
+panel/admin/products
+panel/admin/sales
+
+***** Blog Controller *****
+blog
+blog/post/{id}/{slug?}
+
+***** CCBill Controller *****
+ccbill/approved
+payment/ccbill
+
+***** Comments Controller *****
+loadmore/comments
+
+***** Countries States Controller *****
+panel/admin/countries
+panel/admin/countries/edit/{id}
+panel/admin/states
+panel/admin/states/edit/{id}
+
+***** Install Controller *****
+install/{addon}
+
+***** Install Script Controller *****
+install/script
+install/script/database
+
+***** Lang Controller *****
+panel/admin/languages
+panel/admin/languages/create
+panel/admin/languages/edit/{id}
+
+***** Live Streaming Controller *****
+live/{username}
+get/data/live
+
+***** Messages Controller *****
+messages
+messages/{id}/{username?}
+loadmore/messages
+messages/ajax/chat
+load/chat/ajax/{id}
+download/message/file/{id}
+
+***** Pages Controller *****
+p/{page}
+panel/admin/pages
+panel/admin/pages/create
+panel/admin/pages/edit/{id}
+
+***** Paypal Controller *****
+payment/paypal
+
+***** Pay Stack Controller *****
+payment/paystack
+paystack/card/authorization/verify
+
+***** Products Controller *****
+add/product
+add/custom/content
+product/download/{id}
+shop
+shop/product/{id}/{slug?}
+
+***** Social Auth Controller *****
+oauth/{provider}
+oauth/{provider}/callback
+
+***** Stripe Connect Controller *****
+stripe/connect
+connect/{token}
+
+***** Stripe Controller *****
+payment/stripe
+
+***** Tax Rates Controller *****
+panel/admin/tax-rates
+panel/admin/tax-rates/edit/{id}
+
+***** Upgrade Controller *****
+update/{version}
+
+***** Upload Media Controller *****
+upload/media
+
+***** Upload Media File Shop Controller *****
+upload/media/shop/file
+
+***** Upload Media Message Controller *****
+upload/media/message
+
+***** Upload Media Preview Shop Controller *****
+upload/media/shop/preview
+
+***** Updates Controller *****
+ajax/updates
+files/storage/{id}/{path}
+files/messages/{id}/{path}
+file/media/{typeMedia}/{fileId}/{filename}
+media/storage/focus/{type}/{path}
+update/edit/{id}
+ajax/user/bookmarks
+explore
+ajax/explore
+
+***** User Controller *****
+dashboard
+ajax/notifications
+settings/page
+privacy/security
+settings/verify/account
+notifications
+settings/password
+my/subscribers
+my/subscriptions
+my/payments
+my/payments/received
+my/payments/invoice/{id}
+settings/payout/method
+settings/withdrawals
+settings/payments/card
+my/bookmarks
+my/purchases
+ajax/user/purchases
+download/file/{id}
+deposits/invoice/{id}
+my/cards
+settings/restrictions
+my/posts
+block/countries
+my/referrals
+my/purchased/items
+my/sales
+my/products
+ajax/mentions
+{slug}
+{slug}/{media}
+{slug}/post/{id}

@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateBrandGroupsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('brand_groups', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->foreignId('created_by')
+                ->nullable()
+                ->references('id')
+                ->on('users')
+                ->onDelete('SET NULL');
+
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('brand_groups');
+    }
+}

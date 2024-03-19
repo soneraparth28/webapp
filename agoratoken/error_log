@@ -1,0 +1,8 @@
+[05-May-2023 12:38:45 UTC] PHP Warning:  Undefined array key "channel_name" in /home/appmator/public_html/agoratoken/index.php on line 7
+[05-May-2023 12:38:45 UTC] PHP Warning:  Undefined array key "uid" in /home/appmator/public_html/agoratoken/index.php on line 8
+[05-May-2023 12:38:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function addPrivilege() on null in /home/appmator/public_html/agoratoken/RtcTokenBuilder.php:45
+Stack trace:
+#0 /home/appmator/public_html/agoratoken/RtcTokenBuilder.php(27): RtcTokenBuilder::buildTokenWithUserAccount('48b1cac97deb40b...', '2f58c46f0a86408...', NULL, NULL, 0, 1683293925)
+#1 /home/appmator/public_html/agoratoken/index.php(15): RtcTokenBuilder::buildTokenWithUid('48b1cac97deb40b...', '2f58c46f0a86408...', NULL, NULL, 0, 1683293925)
+#2 {main}
+  thrown in /home/appmator/public_html/agoratoken/RtcTokenBuilder.php on line 45

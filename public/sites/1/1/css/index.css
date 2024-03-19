@@ -1,0 +1,12 @@
+#header-text-8 .bg {
+    background-image: url('../images/bg-82.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity:0.75;
+}#footer-logo-share .bg {
+    background-image: url('../images/bg-sign.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    opacity: 0.075;
+}

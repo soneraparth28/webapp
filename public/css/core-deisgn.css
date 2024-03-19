@@ -1,0 +1,78 @@
+:root {
+    --dark: #000;
+    --light: #fff;
+    --light-gray: #E9E9E9;
+    --gray: #E9E9E9;
+    --dark-gray: #303135;
+
+}
+
+body {
+    background: var(--light) !important;
+}
+* {
+    color: var(--dark) !important;
+}
+
+
+.menu-link-item, a.menu-link-item {
+    color: var(--gray) !important;
+}
+.menu-link-item:hover, a.menu-link-item:hover, a.menu-link-item:active, a.menu-link-item.active {
+    color: var(--dark-gray) !important;
+}
+
+.light-btn {
+    background: var(--light) !important;
+    color: var(--dark) !important;
+    border-color: transparent !important;
+    border-width: 2px;
+}
+.dark-btn {
+    background: var(--dark) !important;
+    color: var(--light) !important;
+    border-color: transparent !important;
+    border-width: 2px;
+}
+.light-gray-btn {
+    background: var(--light-gray) !important;
+    color: var(--dark) !important;
+    border-color: transparent !important;
+}
+.gray-btn {
+    background: var(--gray) !important;
+    color: var(--dark) !important;
+    border-color: transparent !important;
+}
+
+
+.color-light {color: var(--light) !important;}
+.color-dark {color: var(--dark) !important;}
+.color-light-gray {color: var(--light-gray) !important;}
+.color-gray {color: var(--gray) !important;}
+.color-dark-gray {color: var(--dark-gray) !important;}
+
+.bg-light {background: var(--light) !important;}
+.bg-dark {background: var(--dark) !important;}
+.bg-light-gray {background: var(--light-gray) !important;}
+.bg-gray {background: var(--gray) !important;}
+.bg-dark-gray {background: var(--dark-gray) !important;}
+
+
+
+
+
+.light-btn, .dark-btn, input, .light-gray-btn, .gray-btn {
+    border-radius: 5px !important;
+    padding: .5rem;
+    cursor: pointer;
+}
+.item-container-box {
+    padding: 1rem;
+}
+
+.light-btn:hover, .dark-btn:hover, .light-gray-btn:hover, .gray-btn:hover {
+    font-weight: bold;
+}
+
+
